@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "Dictionary Extension",
+    "version": "1.0",
+    "description": "A browser extension example.",
+    "permissions": [
+      "activeTab",
+      "storage"
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["images/*", "scripts/*"],
+        "matches": ["<all_urls>"]
+      }
+    ],
+    "content_security_policy": {
+        "ex,tension_pages": "script-src 'self'; object-src 'none';"
+      },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "128": "logo.png"
+      }
+    }
+  }
+  
